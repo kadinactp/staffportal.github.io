@@ -382,8 +382,8 @@
       <p>Staff Portal</p>
     </div>
     <nav>
-      <button class="nav-btn active" data-section="announcements"><span class="ico">📢</span> Announcements</button>
-      <button class="nav-btn" data-section="links"><span class="ico">🔗</span> Quick Links</button>
+      <button class="nav-btn" data-section="announcements"><span class="ico">📢</span> Announcements</button>
+      <button class="nav-btn active" data-section="links"><span class="ico">🔗</span> Quick Links</button>
       <button class="nav-btn" data-section="policies"><span class="ico">📋</span> Policies</button>
       <button class="nav-btn" data-section="payments"><span class="ico">🗓</span> Payment Schedule</button>
       <button class="nav-btn" data-section="information"><span class="ico">ℹ️</span> Information</button>
@@ -409,7 +409,7 @@
   <main>
 
     <!-- ANNOUNCEMENTS -->
-    <section class="section active" id="section-announcements">
+    <section class="section" id="section-announcements">
       <div class="page-head">
         <div class="eyebrow">Stay in the loop</div>
         <h2>Announcements</h2>
@@ -438,7 +438,7 @@
     </section>
 
     <!-- QUICK LINKS -->
-    <section class="section" id="section-links">
+    <section class="section active" id="section-links">
       <div class="page-head">
         <div class="eyebrow">Get to work</div>
         <h2>Quick Links</h2>
