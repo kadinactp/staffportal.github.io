@@ -631,7 +631,7 @@
 const DAYS = ['Monday','Tuesday','Wednesday','Thursday','Friday'];
 
 const DEFAULT_LINKS = [
-  {id:'l1', name:'RMS', url:'https://web.rmscloud.com'},
+  {id:'l1', name:'RMS', url:'https://app.rmscloud.com'},
   {id:'l2', name:'Gmail', url:'https://mail.google.com'},
   {id:'l3', name:'Xero', url:'https://login.xero.com'},
   {id:'l4', name:'Maintenance Log', url:'#'},
@@ -652,7 +652,7 @@ const DEFAULT_INFORMATION = {
   tanyaPhone: '0417 014 707',
   address: 'Lindsay Terrace Kadina, 5554 SA',
   netbankNumber: '83137189',
-  rmsUrl: 'https://web.rmscloud.com',
+  rmsUrl: 'https://app.rmscloud.com',
   rmsUsername: 'staff@kadinactp.com',
   rmsPassword: 'Kadina5554',
   rmsNote: 'Click the housekeeping button to view all the tasks, bed configurations and to complete tasks.'
