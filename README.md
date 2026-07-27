@@ -385,7 +385,7 @@
       <button class="nav-btn" data-section="announcements"><span class="ico">📢</span> Announcements</button>
       <button class="nav-btn active" data-section="links"><span class="ico">🔗</span> Quick Links</button>
       <button class="nav-btn" data-section="policies"><span class="ico">📋</span> Policies</button>
-      <button class="nav-btn" data-section="payments"><span class="ico">🗓</span> Payment Schedule</button>
+      <button class="nav-btn" data-section="payments"><span class="ico">🗓</span> Automatic Payments</button>
       <button class="nav-btn" data-section="information"><span class="ico">ℹ️</span> Information</button>
     </nav>
     <div class="admin-box" id="admin-locked">
@@ -400,7 +400,7 @@
       <span class="admin-status">🔓 Admin mode on</span>
       <button class="admin-toggle" id="admin-logout">Log out</button>
     </div>
-    <div class="foot">Payment schedule can be updated by any staff member. Announcements, policies, and quick links are admin-only.<br><br>
+    <div class="foot">Automatic Payments can be updated by any staff member. Announcements, policies, and quick links are admin-only.<br><br>
       Signed in as <strong id="signed-in-email"></strong> —
       <a href="#" id="portal-signout" style="color:#fff;text-decoration:underline;">sign out</a>
     </div>
@@ -440,7 +440,7 @@
     <!-- QUICK LINKS -->
     <section class="section active" id="section-links">
       <div class="page-head">
-        <div class="eyebrow">Get to work</div>
+        <div class="eyebrow">Your favourite links all in one place</div>
         <h2>Quick Links</h2>
         <p>Jump straight to the systems you use every shift.</p>
       </div>
@@ -495,7 +495,7 @@
     <section class="section" id="section-payments">
       <div class="page-head">
         <div class="eyebrow">Recurring guest payments</div>
-        <h2>Weekly Payment Schedule</h2>
+        <h2>Weekly Automatic Payment</h2>
         <p>Add a guest's recurring payment once — it'll sit under the right day, every week, for the whole team to see.</p>
       </div>
 
