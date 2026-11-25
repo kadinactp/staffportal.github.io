@@ -284,8 +284,8 @@ document.getElementById('emergency-modal').addEventListener('click', (e)=>{ if(e
 (()=>{const icons={home:'⌂',routines:'✓',announcements:'♧',guest:'◉',resources:'▤',reports:'▧',calendar:'▦',links:'↗',payments:'＄','rms-payments':'▥',info:'ⓘ',admin:'⚙'};
 document.querySelectorAll('#nav button').forEach(b=>{const i=document.createElement('span');i.className='v2icon';i.textContent=icons[b.dataset.page]||'·';i.style.marginRight='8px';i.setAttribute('aria-hidden','true');const t=document.createElement('span');t.className='v2text';const nodes=[...b.childNodes];nodes.forEach(n=>{if(n.nodeType===3)t.append(n)});b.prepend(i,t);b.title=t.textContent.trim();b.setAttribute('aria-label',t.textContent.trim())});
 document.getElementById('v2-sidebar').onclick=()=>document.querySelector('.shell').classList.toggle('v2compact');
-const reportsUrl=''; // Set only to the deployed, access-controlled Apps Script /exec URL.
-if(/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(reportsUrl)){const a=document.getElementById('reports-open');a.href=reportsUrl;a.classList.remove('hidden');document.getElementById('reports-status').textContent='Open the report library to view available PDFs.'}
+const reportsUrl='https://script.google.com/a/macros/kadinactp.com/s/AKfycbxpBAYazBSvrGMXLoKXl5OUwJhngx4dVg1sXWysEex7Tx7t2lY2Nmtc5sqDdRquK2rv/exec'; // Set only to the deployed, access-controlled Apps Script /exec URL.
+if(/^https:\/\/script\.google\.com\/(?:a\/macros\/kadinactp\.com|macros)\/s\/[\w-]+\/exec$/.test(reportsUrl)){const a=document.getElementById('reports-open');a.href=reportsUrl;a.classList.remove('hidden');document.getElementById('reports-status').textContent='Open the report library to view available PDFs.'}
 const home=document.getElementById('page-home');const card=document.createElement('div');card.className='card';card.style.marginTop='14px';card.innerHTML='<h3>Reports Centre</h3><p class="report-status">Daily and weekly RMS reports, including housekeeping.</p><button class="btn primary" data-goto="reports">View reports →</button>';home.append(card);
 })();
 </script></body></html>
