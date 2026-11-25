@@ -11,7 +11,7 @@ function authorize_() {
   if ((Gmail.Users.getProfile('me').emailAddress||'').toLowerCase()!==MAILBOX) throw new Error('Incorrect mailbox.');
 }
 function doGet(e) {
-  try { authorize_(); if(e && e.parameter && e.parameter.view === 'dashboard') return HtmlService.createHtmlOutputFromFile('Dashboard').setTitle('Recent reports').setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL); return HtmlService.createHtmlOutputFromFile('Reports').setTitle('Kadina CTP Reports Centre'); }
+  try { authorize_(); if(e && e.parameter && e.parameter.view === 'dashboard') return HtmlService.createHtmlOutputFromFile('Dashboard').setTitle('Recent reports').setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL); if(e && e.parameter && e.parameter.view === 'embedded') return HtmlService.createHtmlOutputFromFile('Reports').setTitle('Reports Centre').setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL); return HtmlService.createHtmlOutputFromFile('Reports').setTitle('Kadina CTP Reports Centre'); }
   catch(e){return HtmlService.createHtmlOutput('Report access denied. Sign in with an authorised staff account.');}
 }
 function parts_(p,out){
